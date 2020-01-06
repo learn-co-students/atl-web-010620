@@ -3,15 +3,17 @@ Thanks for attending Flatiron School! In this repo you'll find all of the lectur
 
 
 ## Talks and Additional Resources
-Here's some of the talks that we participated in during your 15 weeks.
+Here's some of the talks that we participated in or might be helpful during your 15 weeks.
 
 ### Talks- Soft Skills
 
 | Title | Link |
 |-------|------|
+| Learning to Learn | [Video](https://youtu.be/SPCh2G1SgaA) | 
 
 
 ### Breakout Sessions
 
 | Title | Link | 
 | ----- | -----|
+|Github Review | [Video](https://www.youtube.com/watch?v=w0LkhxeUxj8&t=4s) | 
