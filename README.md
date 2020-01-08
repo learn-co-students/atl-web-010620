@@ -10,6 +10,7 @@ Here's some of the talks that we participated in or might be helpful during your
 | Title | Link |
 |-------|------|
 | Learning to Learn | [Video](https://youtu.be/SPCh2G1SgaA) | 
+| Pair Programming Talk | [Video](https://www.youtube.com/watch?v=5_BEb3KgxEE)|
 
 
 ### Breakout Sessions
