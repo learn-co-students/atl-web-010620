@@ -40,7 +40,7 @@ We built a many-to-many relationship together using the following process:
 - Pseudocode out your logic (we did that with comments and what we expected to happen when we added code)
 - TEST out what you think will work, get errors and edit code
 - Refactor and make your code efficient
-x
+
 
 This codebase has been updated with the correct solution, for reference. When watching the video lecture, use this solution to think through the logic.
 
