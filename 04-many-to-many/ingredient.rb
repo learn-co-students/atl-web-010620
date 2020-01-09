@@ -1,7 +1,7 @@
 
 class Ingredient
 
-    attr_accessor :name, :measurement, :recipes
+    attr_accessor :name, :measurement, :recipe
 
     @@all = []
 
@@ -9,11 +9,21 @@ class Ingredient
         @name = name 
         @measurement = measurement
         @@all << self
-        @recipes = []
     end
 
     def self.all
         @@all
+    end
+
+    def recipes
+        recipe_ingredients.map { |recipe_ingredient| recipe_ingredient.recipe}
+    end
+
+
+    def recipe_ingredients
+        RecipeIngredient.all.select do |recipe_ingredient| 
+            recipe_ingredient.ingredient == self 
+        end
     end
 
 end

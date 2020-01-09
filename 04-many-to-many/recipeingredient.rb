@@ -1,12 +1,12 @@
 class RecipeIngredient
 
-    attr_accessor :recipes, :ingredients
+    attr_accessor :recipe, :ingredient
 
     @@all = []
 
-    def initialize(recipes, ingredients)
-        @recipes = recipes
-        @ingredients = ingredients
+    def initialize(recipe, ingredient) # watch for pluralizing
+        @recipe = recipe
+        @ingredient = ingredient
         @@all << self
     end
 
@@ -16,3 +16,5 @@ class RecipeIngredient
     end
 
 end
+
+# this class has the single responsibility to know about the models' relationship

@@ -1,6 +1,7 @@
 class Recipe
 
-    attr_accessor :name, :description, :ingredients
+
+    attr_accessor :name, :description, :ingredient
 
     @@all = []
 
@@ -8,7 +9,6 @@ class Recipe
         @name = name
         @description = description
         @@all << self
-        @ingredients = []
     end
 
 
@@ -16,22 +16,14 @@ class Recipe
         @@all
     end
 
-    def ingredients
-        # #i want all the ingredients 
-        # Ingredient.all
-        # #i want the ingredients in this recipe
-        # ingredients.self.all
-        # #gimme those
-        # map - select 
-
-        # Ingredient.all.select{ |ingredient| ingredient.self}
-
-        # look at this method and how it's pseudocoded :D 
+    def recipe_ingredients
+        RecipeIngredient.all.select do |recipe_ingredient| 
+            recipe_ingredient.recipe == self 
+        end
     end
 
-
-    def recipe_ingredients
-        RecipeIngredient.all.select { |ingredient| recipe_ingredients.recipe == self }
+    def ingredients
+        recipe_ingredients.map { |recipe_ingredient| recipe_ingredient.ingredient }
     end
 
 

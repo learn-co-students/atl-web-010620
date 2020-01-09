@@ -26,3 +26,37 @@ A many-to-many relationship describes a relationship between two models where on
 
 
 *Check out our code to see how we have built this many-to-many relationship.*
+
+
+### AFTER LECTURE ADDITIONS
+
+We built a many-to-many relationship together using the following process: 
+
+- Identify the domain problem and real-life application 
+- Draw out a schema (more on this word later) to represent your models
+- Create your models with the attributes and data needed to have basic functionality
+- TEST and get errors
+- Let errors inform you of what logic needs to be added next
+- Pseudocode out your logic (we did that with comments and what we expected to happen when we added code)
+- TEST out what you think will work, get errors and edit code
+- Refactor and make your code efficient
+x
+
+This codebase has been updated with the correct solution, for reference. When watching the video lecture, use this solution to think through the logic.
+
+Here are your test cases (run `ruby run.rb` and test these in the console): 
+
+See if seed data is present: 
+- Recipe.all
+- Ingredient.all
+- RecipeIngredient.all
+
+Create new instances: 
+- r = Recipe.all[1]
+- i = Ingredient.all[3]
+
+See if many-to-many relationship is valid: 
+- r.ingredients
+- i.recipes
+- r.recipe_ingredients
+- i.recipe_ingredients
