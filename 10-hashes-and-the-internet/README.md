@@ -1,6 +1,6 @@
 # Hashes and the Internet
 
-Today in preparation for your projects and pairing labs, we're going to talk about how to gain data from the internet, how the net works in terms of the request-response lifecycle, and how to use APIs to get data.
+Today we're going to talk about how to gain data from the internet, how the net works in terms of the request-response lifecycle, and how to use APIs to get data.
 
 ## SWBATs
 
@@ -90,9 +90,11 @@ Let's check out [Reddit](https://reddit.com) and see what JSON response we get a
 ### Defining Application Programming Interface \(API\)
 
 #### What is an API? 
-An API is the messenger that takes requests to tell an application what you want to do, and sends responses based on your request. It's the layer between clients and servers that execute the actions requested. 
+An API is the messenger that takes requests to tell an application what you want to do, and sends responses based on your request. It's the layer between clients and servers that execute the actions requested, generally protected by an access token.
 
 Many different services that you use today (Twitter, Facebook, etc) have publicly available data that can be accessed through their APIs to gain information and create interaction with your app. 
  
 Let's see a bit of code as practice making requests to an API through Ruby and examining the result. Flip over to `app.rb` for more. 
+
+To learn more about testing APIs, [check this out.](https://www.sitepoint.com/api-building-and-testing-made-easier-with-postman/)
 

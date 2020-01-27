@@ -74,5 +74,4 @@ binding.pry
 
 # find keywords in description
 # return books published in the last 5 years
-# let's print out book information for ^^^
 # search for different kinds of books
