@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All The Books</title>
+</head>
+<body>
+  <h1>See All Books</h1>
+  <% @books.each do |book| %>
+      <p><%= book.title %></p>
+  <% end %>
+  <p>Lyn's Favorite: Their Eyes Were Watching God by Zora Neale Hurston</p>
+</body>
+</html>
