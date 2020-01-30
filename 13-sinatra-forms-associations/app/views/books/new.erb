@@ -1,0 +1,11 @@
+
+  <h1>Add a New Book</h1>
+
+  <form method = "POST" action = "/books">
+    <p>Book Title: <input type="text" placeholder= "Enter book title" name="book[title]"></p>
+    <select name="book[author_id]">
+      <!-- what do I need to execute here to get EACH author, then show an <option value = author id and first name>?  -->
+    </select>
+    <p>Snippet: <input type="text" placeholder= "Enter snippet" name="book[snippet]"></p>
+    <input type="submit">
+  </form>
