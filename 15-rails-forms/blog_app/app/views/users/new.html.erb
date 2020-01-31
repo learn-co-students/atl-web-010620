@@ -1,0 +1,6 @@
+<%= form_for @user, method: :post do |f| %>
+    Username: <%= f.text_field :username %><br />
+    Bio: <%= f.text_field :bio %><br />
+    email : <%= f.text_field :email %><br />
+    <%= f.submit %>
+  <% end %>
