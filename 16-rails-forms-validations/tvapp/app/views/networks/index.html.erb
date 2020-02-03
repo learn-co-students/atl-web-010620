@@ -1,0 +1,12 @@
+<h1>Networks#index</h1>
+
+
+<ul>
+    <% @networks.each do |network| %>
+        <li><%= link_to network.name, network_path(network) %></li>
+    <% end %>
+</ul>
+
+
+
+<p>Find me in app/views/networks/index.html.erb</p>

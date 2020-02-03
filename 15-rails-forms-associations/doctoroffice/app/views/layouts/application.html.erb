@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tardis' Medical Bay</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="/doctors">Tardis Medical Center</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="/doctors">Doctors</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/patients">Patients</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/patients/new">New Patients</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="/doctors/new">For Our New Doctors</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <%= yield %>
+  </body>
+</html>

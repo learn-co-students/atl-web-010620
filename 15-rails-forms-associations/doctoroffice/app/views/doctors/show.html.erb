@@ -1,0 +1,15 @@
+<div class="container">
+    <h1 class="display-3" style="padding-top: 30px;"><%= @doctor.name %></h1>
+    <br/>
+</div>
+
+<div class="container">
+    <h1 class="display-6"><%= @doctor.specialty %></h1>
+    <br>
+    <p>Dolores quis quia ad quo voluptates. Maxime delectus totam numquam. Necessitatibus vel atque qui dolore. Id neque nemo. Dolores iusto facere est ad. Accusamus ipsa dolor ut. Et officiis ut hic. Sunt asperiores minus distinctio debitis ipsa dolor. Minima eos deleniti.</p>
+</div>
+
+<div class="container" style="padding-top: 50px;">
+    <p>Not your flavor? Learn about another doctor, <%= link_to "here.", "/doctors" %></p>
+    <p>To edit your file, click <%= link_to "here.", edit_doctor_path(@doctor) %></p>
+</div>

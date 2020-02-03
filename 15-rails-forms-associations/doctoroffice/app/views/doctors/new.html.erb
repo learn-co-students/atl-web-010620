@@ -1,0 +1,18 @@
+<div class="container" style="padding-top: 30px;">
+    <h1 class="display-3" style="padding-top: 30px;">New Doctors Form</h1>
+    <br/>
+    <p>Are you new to our family of practitioners? Add yourself to our database using this form. </p>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+    <%= form_for @doctor do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+
+    <%= f.label :specialty %>
+    <%= f.text_field :specialty %>
+
+    <%= f.submit %>
+    <% end %>
+</div>

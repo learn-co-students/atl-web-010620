@@ -1,0 +1,20 @@
+<div class="container" style="padding-top: 30px;">
+        <h1 class="display-3" style="padding-top: 30px;">Edit Doctors Form</h1>
+        <br/>
+        <p>Made a boo-boo? Change your file using this form. </p>
+    </div>
+    
+    <div class="container" style="padding-top: 30px;">
+        <%= form_for @doctor do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    
+        <%= f.label :specialty %>
+        <%= f.text_field :specialty %>
+    
+        <%= f.submit %>
+        <% end %>
+
+        <%= button_to "Delete", doctor_path(@doctor), method: :delete %>
+
+    </div>
