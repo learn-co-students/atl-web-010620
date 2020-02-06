@@ -1,0 +1,13 @@
+<h1>Welcome <%= @user.first_name %> <%= @user.last_name %></h1>
+<p>Here are your recipes:</p>
+<% if @user.recipes.empty? %>
+  <p>Yikes, you have no recipes</p>
+<% else %>
+  <ul>
+    <% @user.recipes.each do |recipe| %>
+      <li>Title: <%= recipe.title %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= link_to "Delete User", user_path(@user), method: :delete %>
