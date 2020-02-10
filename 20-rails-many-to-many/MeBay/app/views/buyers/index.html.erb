@@ -1,0 +1,10 @@
+<h1>Buyers#index</h1>
+<p>Find me in app/views/buyers/index.html.erb</p>
+
+<ul>
+    <% @buyers.each do |buyer| %>
+            <li>
+                <%= link_to buyer.name, buyer_path(buyer) %>
+            </li>
+    <% end %>
+</ul>

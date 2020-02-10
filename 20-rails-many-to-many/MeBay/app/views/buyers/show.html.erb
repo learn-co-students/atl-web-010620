@@ -1,0 +1,26 @@
+<h1>Buyers#show</h1>
+
+
+
+<h2><%= @buyer.name %></h2>
+
+<p>Stuff I Brought</p>
+<ul>
+    <% @buyer.products.each do |product| %>
+            <li>
+                <%= link_to product.name, product_path(product) %>
+                <%= link_to product.seller.name, seller_path(product.seller) %>
+            </li>
+    <% end %>
+</ul>
+
+
+
+<p>People I Brought From</p>
+<ul>
+    <% @buyer.sellers.uniq.each do |seller| %>
+            <li>
+                <%= link_to seller.name, seller_path(seller) %>
+            </li>
+    <% end %>
+</ul>
