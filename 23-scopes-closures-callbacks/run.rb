@@ -1,6 +1,6 @@
-say_name
+print_name
 
-def say_name
-  name = 'Robert'
-  puts name
+def print_name
+  person = 'Dino'
+  puts person
 end

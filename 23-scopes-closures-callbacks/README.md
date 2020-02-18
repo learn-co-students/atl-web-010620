@@ -1,4 +1,4 @@
-# Scope and closures
+# Scope, closures && callbacks
 
 ![](https://media.giphy.com/media/sOGgevbtBDYKQ/giphy.gif)
 
