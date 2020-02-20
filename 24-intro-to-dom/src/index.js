@@ -1,18 +1,24 @@
+console.log('%c Hello, World!', 'color: red')
+// Objective / Feature ???
+  // Render memes on the page
 
+// PROCESS
 
-// Adding images to the page
+dankMemes.forEach(function(image_url){
+  // console.log(image_url)
 
-// Get the parent => div => '#container'
-const parent = document.querySelector('#container')
+  // Create img tag
+  var someImage = document.createElement('img')
 
-// Create IMG tags for each item in the array
-dankMemes.forEach(function(item){
-  // console.log(item)
-  const img = document.createElement('img')
-  img.src = item
+  // Change the src
+  someImage.src = image_url
+  // someImage.className += " first second third"
 
-  // Slap it on the DOM 🤚🏻
-  parent.appendChild(img)
+  // Find the location
+  var container = document.querySelector('#container')
+
+  // 🤚🏻 to the DOM
+  container.appendChild(someImage)
 })
 
 
@@ -31,7 +37,8 @@ dankMemes.forEach(function(item){
 
 
 
-// console.log('%c Hello, World!', 'color: goldenrod')
+
+
 //
 // // Adding an li on the page
 //

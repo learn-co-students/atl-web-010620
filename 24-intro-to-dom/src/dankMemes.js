@@ -1,4 +1,4 @@
-const dankMemes = [
+var dankMemes = [
   'https://i.imgur.com/dzbQCj4.png',
   'https://i.imgur.com/ZwfLpVW.jpg',
   'https://i.imgur.com/xNWld3g.jpg',

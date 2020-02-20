@@ -1,71 +1,79 @@
-document.addEventListener('DOMContentLoaded',function (){
+document.addEventListener('DOMContentLoaded',function(e){
+  // Objective - Show a comment
 
-// Handle form submission
-// Add it to the page
+  // Get access to the FORM
+    const commentForm = document.getElementById('comment-form')
 
+  // Listen for submit
+  commentForm.addEventListener('submit',function(e){
+    // Block the refresh or redirect
+    e.preventDefault()
+    // Make items render
+      // Get the parent
+      const commentParent = document.getElementById('comments-container')
 
-// Get the form
-const commentForm = document.querySelector('#comment-form')
+      // Create a list item
+      const comment = document.createElement('li')
+      // Change the content in li with form data
+      comment.innerText = e.target.querySelector('#new-comment').value
 
-// Add the event listener
-commentForm.addEventListener('submit',function(event){
-  // Handle the event
-  event.preventDefault()
-  const form = event.target
-  const comment = form.querySelector('#new-comment').value
+      // 🤚🏻
+      commentParent.appendChild(comment)
 
-  // Slap something on the dom 🤚🏻
-  const commentList = document.querySelector('#comments-container')
-  const ul = document.createElement('ul')
-  const li = document.createElement('li')
-
-  li.textContent = comment
-  ul.appendChild(li)
-  commentList.appendChild(ul)
-
-  form.reset()
-})
+      e.target.reset()
+  })
 
 
 
 
 
+
+
+
+
+
+  // Process
 
   const buttonParent = document.querySelector('#button-parent')
-  // Listen for an event => 'click'
-  buttonParent.addEventListener('click',function(event){
 
-    if(event.target.id === 'alert'){
-      alert('You clicked alert button.')
-    }else if(event.target.id === 'log'){
-      console.log('Something...')
-    }else if(event.target.id === 'errr'){
-      console.error('There was an error somewhere, go fix it..')
+  buttonParent.addEventListener('click',function(e){
+    if(e.target.id === 'alert'){
+      alert('ThIs Is An AlErT 🤔')
+    }else if(e.target.id === 'log'){
+      console.log('ThIs Is A lOg 👁')
+    }else if(e.target.id === 'errr'){
+      console.error('ThIs Is An ErRoR ❓')
     }
   })
 
 
 
-  // Show an alert on button click
-
-  // Need button
-  // const alertButton = document.querySelector('#alert')
-  // // Listen for an event => 'click'
-  // alertButton.addEventListener('click',function(){
-  //   // pop up an alert
-  //   alert('You clicked alert button.')
-  // })
-  //
-  // const consoleSomething = document.querySelector('#log')
-  // consoleSomething.addEventListener('click',function(){
-  //   console.log('Something...')
-  // })
-  //
-  // const consoleErr = document.querySelector('#errr')
-  // consoleErr.addEventListener('click',function(){
-  //   console.error('There was an error somewhere, go fix it..')
-  // })
 
 
 
+
+
+
+
+
+
+
+   // // Get the button
+   //  const alertButton = document.querySelector('#alert')
+   // // Add event listener
+   //  alertButton.addEventListener('click',function(e){
+   //    // show a pop up
+   //    alert('ThIs Is An AlErT 🤔')
+   //  })
+   //
+   //
+   //  const logButton = document.querySelector('#log')
+   //  logButton.addEventListener('click',function(e){
+   //    console.log('ThIs Is A lOg 👁')
+   //  })
+   //
+   //  const errButton = document.querySelector('#errr')
+   //  errButton.addEventListener('click',function(e){
+   //    console.error('ThIs Is An ErRoR ❓')
+   //  })
 })
