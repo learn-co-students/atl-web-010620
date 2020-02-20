@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+}
+
+.header{
+  margin-top: 40px;
+}
+
+.btnclass{
+  margin-top: 30px;
+  bottom: 0;
+}
+
+#addnewstuff{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.img{
+  height: 300px;
+}
