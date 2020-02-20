@@ -1,7 +1,6 @@
 # Ajax and Fetch
 
 (Not this kind of AJAX)
-
 ![AJAX soap][ajax-soap-bottle-img]
 
 ---

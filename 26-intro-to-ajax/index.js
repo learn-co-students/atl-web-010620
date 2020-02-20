@@ -2,39 +2,44 @@
 /* Let's make this work */
 /* https://dog.ceo/api/breeds/image/random */
 /*************************************************************************************************************************/
-document.addEventListener('DOMContentLoaded',function(){
-  // Add an Image based on button CLICK
-  // Access to the api
-  const API = 'https://dog.ceo/api/breeds/image/random'
+  document.addEventListener('DOMContentLoaded',function(e){
 
-  // Add an event listener to the button
-  const button = document.querySelector('button')
+    // 1. Click on the Button
+     // Access to the parent
+     const buttonParent = document.querySelector('.container.btnclass')
+     // Get the right button
+     const buttonItSelf = buttonParent.querySelector('button')
+     // Add an addEventListener and pass a callback
+     buttonItSelf.addEventListener('click',function(e){
+       // 2. Show an Image
+        // Get the image
 
-  button.addEventListener('click',function(e){
-    // fetch the url
-    fetch(API)
-    .then(function(res){
-        return res.json()
-    })
-    .then(function(data){
-      // create an image element and assign the src
-      const img = document.createElement('img')
-      img.src = data.message
+        const data = fetch('https://dog.ceo/api/breeds/image/random')
+        .then(function(response){
+          return response.json()
+        })
+        .then(function(jsonResponse){
+          // create an image element
+            const doggieImg = document.createElement('img')
+            doggieImg.src = jsonResponse.message
 
-      // slap it on the dom 🤚🏻
-      const div = document.querySelector('#addnewstuff')
-      div.innerHTML = ''
-      div.appendChild(img)
-    })
-    .catch(function(error){
-      console.log(error)
-    })
+          // 🤚🏻
+            const imgParent = document.querySelector('#addnewstuff')
+            debugger;
+            imgParent.innerHTML = ''
+            imgParent.appendChild(doggieImg)
+        })
+     })
+
 
   })
-
-
-})
 /*************************************************************************************************************************/
+
+
+
+
+
+
 
 
 
@@ -52,32 +57,17 @@ document.addEventListener('DOMContentLoaded',function(){
 /*************************************************************************************************************************/
 /* DIY Sleep Function */
 /*************************************************************************************************************************/
-// function sleep(n) {
-//   let i = 0
-//   while(i < (12 ** 8) * n) {
-//     i++
-//   }
-// }
-//
-// console.log('Starting the sleep function')
-// sleep(10)
-// console.log('Wow that sleep function took forever to run. 1 Star 🌟')
 
-//
-// function fun1(){
-//   fun2()
-// }
-// function fun2(){
-//   fun3()
-// }
-// function fun3(){
-//   fun4()
-// }
-// function fun4(){
-//   return "this is yeet.."
-// }
-//
-// fun1()
+  // function sleep(n) {
+  //   let i = 0
+  //   while(i < (12 ** 8) * n) {
+  //     i++
+  //   }
+  // }
+  //
+  // console.log('Starting the sleep function')
+  // sleep(10)
+  // console.log('Wow that sleep function took forever to run. 1 Star 🌟')
 
 /*************************************************************************************************************************/
 
@@ -95,3 +85,32 @@ document.addEventListener('DOMContentLoaded',function(){
 // },500)
 //
 // console.log('Fifth Line')
+
+
+
+
+
+
+
+
+
+
+//
+// function fun1(){
+//   fun2()
+//   console.log('fun1 ended')
+// }
+// function fun2(){
+//   fun3()
+//   console.log('fun2 ended')
+// }
+// function fun3(){
+//   fun4()
+//   console.log('fun3 ended')
+// }
+// function fun4(){
+//   console.log('fun4 ended')
+//   return "this is yeet.."
+// }
+//
+// fun1()
