@@ -16,19 +16,27 @@
 
     <script type="text/babel">
 
+      // function helloWorld(name){
+      //   return <h1> Hello, {name} ! </h1>
+      // }
+
       function Greeting(props){
-        return <h1> { props.greet } </h1>
+        return (
+          <div>
+            <h1> Hello {props.name} ! </h1>
+            <h1> Hello {props.name} ! </h1>
+          </div>)
       }
 
       ReactDOM.render(
         <div>
-          <Greeting greet="Hello World" />
-          <Greeting greet="How you doin?"/>
-          <Greeting greet="Ssup?"/>
+          <Greeting name='Tyler' />
+          <Greeting name='Mitch' />
+          <Greeting name='Dino' />
+          <Greeting name='Jacy' />
         </div>,
         document.getElementById('root')
-        );
-
+      )
     </script>
 
   </body>
