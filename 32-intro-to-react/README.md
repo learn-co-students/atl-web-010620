@@ -2,12 +2,12 @@
 
 ### SWBATs
 
-- [ ] Visualize / Identify components on any Websites
-- [ ] Explain what a component is conceptually in the UI
-- [ ] Explain Babel's purpose in React
-- [ ] Explain what a component actually is in code
-- [ ] Using JSX to build custom components and render them in browser
-- [ ] Props are to components as arguments are to functions
+- [x] Visualize / Identify components on any Websites
+- [x] Explain what a component is conceptually in the UI
+- [x] Explain Babel's purpose in React
+- [x] Explain what a component actually is in code
+- [x] Using JSX to build custom components and render them in browser
+- [x] Props are to components as arguments are to functions
 
 ### Check out:
 - [React Documentation](https://reactjs.org)
@@ -109,7 +109,7 @@ ReactDOM.render(
 
 ### To-do(s)
 
-- [ ] Learn how to identify components on a page, visually
+- [x] Learn how to identify components on a page, visually
 - [ ] Understand how ````create-react-app```` works and what it offers a developer
 - [ ] Learn the difference between props and state and why one would use one or the other
 - [ ] Get more familiarity with component hierarchy and flow of information
