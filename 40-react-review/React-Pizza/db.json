@@ -1,0 +1,64 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "topping": "Plain Cheese",
+      "size": "Large",
+      "vegetarian": true
+    },
+    {
+      "id": 2,
+      "topping": "Pepperoni",
+      "size": "Small",
+      "vegetarian": false
+    },
+    {
+      "id": 3,
+      "topping": "🍄",
+      "size": "Small",
+      "vegetarian": false
+    },
+    {
+      "id": 4,
+      "topping": "Sausage Pineapple",
+      "size": "Large",
+      "vegetarian": true
+    },
+    {
+      "id": 5,
+      "topping": "Bacon Spinach",
+      "size": "Large",
+      "vegetarian": false
+    },
+    {
+      "id": 6,
+      "topping": "Spinach",
+      "size": "Medium",
+      "vegetarian": true
+    },
+    {
+      "id": 7,
+      "topping": "Black Olive Garlic",
+      "size": "Small",
+      "vegetarian": false
+    },
+    {
+      "id": 8,
+      "topping": "Pineapple",
+      "size": "Medium",
+      "vegetarian": true
+    },
+    {
+      "id": 9,
+      "topping": "Salami",
+      "size": "Large",
+      "vegetarian": false
+    },
+    {
+      "id": 10,
+      "topping": "Chicken",
+      "size": "Large",
+      "vegetarian": true
+    }
+  ]
+}
